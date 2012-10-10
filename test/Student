@@ -1,6 +1,4 @@
 #!/bin/bash -i
-set -e
 
-./.rmlog
 git status --help | cat
-./.achieved
+./.achieved Student

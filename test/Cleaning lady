@@ -1,5 +1,4 @@
 #!/bin/bash -i
-. .setup
 
 cd $tmp
 git init
@@ -10,5 +9,4 @@ echo foo > bar
 git clean -f
 cd -
 
-. .teardown
 ./.achieved 'Cleaning lady'

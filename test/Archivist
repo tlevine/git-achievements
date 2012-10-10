@@ -1,6 +1,2 @@
-#!/bin/bash -i
-set -e
-
-./.rmlog
-git status --help | cat
-./.achieved
+#!/bin/bash 
+exit 1

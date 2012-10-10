@@ -1,6 +1,11 @@
 #!/bin/bash -i
-set -e
 
-./.rmlog
-git status --help | cat
-./.achieved
+cd $tmp
+git init
+echo needle > haystack
+git add haystack
+git commit haystack -m 'testing Let there be light'
+git commit --amend -m 'testing Seamstress'
+cd -
+
+./.achieved 'Seamstress'

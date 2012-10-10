@@ -1,9 +1,7 @@
 #!/bin/bash -i
-. .setup
 
 cd $tmp
 git init
 cd -
 
-. .teardown
 ./.achieved Architect
