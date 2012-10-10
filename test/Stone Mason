@@ -4,7 +4,7 @@ bash -ic '
 cd .tmp &&
 git init &&
 echo needle > haystack &&
-git add haystack &&
+git add haystack
 '
 
 ./.achieved 'Stone Mason'
