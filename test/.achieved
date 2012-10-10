@@ -1,6 +1,6 @@
 #!/bin/sh
 
-index="$1"
-achievement="$2"
+log=~/.git-achievements.log
+achievement="$1"
 
-sed -n '1,/<div id="locked">/ p' "$index" | grep "$achievement"
+grep "$achievement" "$log"
