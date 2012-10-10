@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Make sure it's in /tmp, then remove it
+echo $tmp | grep '/tmp/tmp.' && rm -Rf $tmp

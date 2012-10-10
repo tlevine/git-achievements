@@ -1,0 +1,4 @@
+#!/bin/bash -x
+set -e
+rm -f ~/.git-achievements.log
+export tmp=$(mktemp -d)

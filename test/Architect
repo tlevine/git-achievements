@@ -1,2 +1,14 @@
-#!/bin/sh
+#!/bin/bash -x
+alias git='git achievements'
+set -e
 
+./.rmlog
+tmp=$(mktemp -d)
+
+cd $tmp
+git init
+cd -
+
+rm -R $tmp
+
+./.achieved Architect
