@@ -6,7 +6,9 @@ git clone ../.fixtures/bare.git .git &&
 git remote add fake /tmp/foo.git &&
 echo foo > bar &&
 git add bar &&
+git commit bar -m baz &&
+echo aoeuaoeu > bar &&
 git commit bar -m baz
 '
 
-./.achieved 'Author'
+./.achieved 'Apprentice Author (Level 1)'

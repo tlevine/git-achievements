@@ -6,6 +6,7 @@ git init &&
 echo needle > haystack &&
 git add haystack &&
 git commit haystack -m "testing Let there be light" &&
-git checkout -b foobar'
+git checkout -b foo &&
+git checkout -b bar'
 
-./.achieved 'Blacksmith'
+./.achieved 'Apprentice Blacksmith (Level 1)'

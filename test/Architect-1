@@ -1,0 +1,6 @@
+#!/bin/sh
+
+bash -ic 'cd $(mktemp -d) && git init'
+bash -ic 'cd $(mktemp -d) && git init'
+
+./.achieved 'Apprentice Architect (Level 1)'

@@ -1,5 +1,0 @@
-#!/bin/sh
-
-bash -ic 'cd .tmp && git-achievements init'
-
-./.achieved Architect
