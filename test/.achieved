@@ -3,4 +3,4 @@
 log=~/.git-achievements.log
 achievement="$1"
 
-grep "$achievement" "$log"
+[ -e "$log" ] && grep "$achievement" "$log"
