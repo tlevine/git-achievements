@@ -1,3 +1,10 @@
 #!/bin/bash -i
-set -e
+. ./setup
 
+cdtmp
+git init
+echo needle > haystack
+git add haystack
+cd -
+
+./.achieved 'Stone Mason'
