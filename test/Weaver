@@ -1,3 +1,11 @@
-#!/bin/bash -i
-exit 1
+#!/bin/sh
 
+bash -ic '
+cd .tmp &&
+git init &&
+echo needle > haystack &&
+git add haystack &&
+git commit haystack -m "testing Let there be light" &&
+git reflog | cat'
+
+./.achieved 'Weaver'

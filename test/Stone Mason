@@ -1,10 +1,10 @@
-#!/bin/bash -i
-. ./setup
+#!/bin/sh
 
-cdtmp
-git init
-echo needle > haystack
-git add haystack
-cd -
+bash -ic '
+cd .tmp &&
+git init &&
+echo needle > haystack &&
+git add haystack &&
+'
 
 ./.achieved 'Stone Mason'

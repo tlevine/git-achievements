@@ -1,11 +1,11 @@
-#!/bin/bash -i
+#!/bin/sh
 
-cd $tmp
-git init
-echo needle > haystack
-git add haystack
-git commit haystack -m 'testing Let there be light'
-git commit --amend -m 'testing Seamstress'
-cd -
+bash -ic '
+cd .tmp &&
+git init &&
+echo needle > haystack &&
+git add haystack &&
+git commit haystack -m "testing Let there be light" &&
+git commit --amend -m "testing Seamstress"'
 
 ./.achieved 'Seamstress'

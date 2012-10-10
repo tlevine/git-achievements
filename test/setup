@@ -1,20 +1,4 @@
-#!/bin/bash -x
-set -e
+#!/bin/sh
 
 rm -f ~/.git-achievements*
-export tmp=$(mktemp -d)
-export test_dir="$PWD"
-
-cd_test_dir() {
-  cd "$test_dir"
-}
-
-cdtmp() {
-  [ $tmp = '' ] && exit 1
-  cd $tmp 
-}
-
-rmtmp() {
-  # Make sure it's in /tmp, then remove it
-  echo $tmp | grep '/tmp/tmp.' && rm -Rf $tmp
-}
+mkdir -p ./.tmp
