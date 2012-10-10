@@ -1,3 +1,12 @@
-#!/bin/bash -i
-exit 1
+#!/bin/sh
 
+bash -ic '
+cd .tmp &&
+git clone ../.fixtures/bare.git .git &&
+git remote add fake /tmp/foo.git &&
+echo foo > bar &&
+git add bar &&
+git commit bar -m baz
+'
+
+./.achieved 'Author'
