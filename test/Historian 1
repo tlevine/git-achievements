@@ -1,0 +1,11 @@
+#!/bin/sh
+
+bash -ic  '
+cd .tmp &&
+git init &&
+echo needle > haystack &&
+git add haystack &&
+git commit haystack -m "testing Let there be light" &&
+for i in $(seq 1 2); do git log | cat > /dev/null; done'
+
+./.achieved 'Historian'
