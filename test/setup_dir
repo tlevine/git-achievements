@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Back up and clear current achievements.
+for file in ~/.git-achievements.log ~/.git-achievements-action.log
+  do
+  [ -e "$file" ] && mv $file{,.bak}
+done
+

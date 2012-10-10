@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Restore achievements
+for file in ~/.git-achievements.log ~/.git-achievements-action.log
+  do
+  if [ -e "${file}.bak" ]
+    then
+    mv $file{.bak,}
+  else
+    rm $file
+  fi
+done
