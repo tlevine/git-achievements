@@ -2,7 +2,8 @@
 
 bash -ic '
 cd .tmp &&
-git clone ../.fixtures/bare.git .git &&
+git clone ../.fixtures/bare.git &&
+cd bare &&
 for fake in a b; do git remote add $fake /tmp/$fake.git; done
 '
 
