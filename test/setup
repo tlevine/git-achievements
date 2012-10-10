@@ -1,7 +1,8 @@
 #!/bin/sh
 
 # Make a temporary directory.
-mkdir -p ./.tmp
+rm -Rf ./.tmp
+mkdir ./.tmp
 
 # Clear git-achievements files
 rm -f ~/.git-achievements{-action,}.log
