@@ -47,3 +47,10 @@ alias git="git-achievements"
 You can get your first achievement by running
 
     git achievements --help
+
+Running Tests
+-----
+Install [Urchin](http://www.urchin.sh), then run this from the root
+of the git repository.
+
+    urchin ./test
