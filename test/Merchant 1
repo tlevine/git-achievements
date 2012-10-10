@@ -1,0 +1,9 @@
+#!/bin/sh
+
+bash -ic '
+cd .tmp &&
+git clone ../.fixtures/bare.git .git &&
+for fake in a b; do git remote add $fake /tmp/$fake.git; done
+'
+
+./.achieved 'Merchant (Level 1)'

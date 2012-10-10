@@ -1,9 +1,0 @@
-#!/bin/sh
-
-bash -ic '
-cd .tmp &&
-git clone ../.fixtures/bare.git .git &&
-git remote add fake /tmp/foo.git
-'
-
-./.achieved 'Merchant'
