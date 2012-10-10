@@ -6,6 +6,8 @@ git init &&
 echo needle > haystack &&
 git add haystack &&
 git commit haystack -m "testing Let there be light" &&
-git commit --amend -m "testing Seamstress"'
+for i in $(seq 1 2);
+  do git commit --amend -m "testing Seamstress";
+done'
 
-./.achieved 'Seamstress'
+./.achieved 'Seamstress (Level 1)'
