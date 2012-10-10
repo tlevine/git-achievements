@@ -1,0 +1,6 @@
+#!/bin/sh
+
+log=~/.git-achievements.log
+achievement="$1"
+
+[ -e "$log" ] && grep -v "$achievement" "$log"
