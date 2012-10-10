@@ -1,0 +1,9 @@
+#!/bin/sh
+
+bash -ic '
+cd .tmp &&
+git init &&
+for file in a b c d; do echo $file > $file && git add $file; done
+'
+
+./.achieved 'Apprentice Stone Mason (Level 2)'
