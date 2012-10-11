@@ -1,0 +1,11 @@
+#!/bin/sh
+
+bash -ic '
+cd .tmp &&
+git clone ../.fixtures/bare.git &&
+cd bare &&
+git grep needle &&
+git grep needle
+'
+
+./.achieved 'Apprentice Fisherman (Level 1)'
