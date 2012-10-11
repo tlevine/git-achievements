@@ -52,7 +52,7 @@ Running Tests
 -----
 Install  Urchin (http://www.urchin.sh).
 
-    wget -O /usr/local/bin https://raw.github.com/scraperwiki/urchin/83b0e53536d05a13501a9dc69b1a481158fedb24/urchin
+    wget -O /usr/local/bin/urchin https://raw.github.com/scraperwiki/urchin/83b0e53536d05a13501a9dc69b1a481158fedb24/urchin
     chmod +x /usr/local/bin/urchin
 
 Run the tests like so (from the root of the git repository.)
