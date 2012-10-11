@@ -1,0 +1,10 @@
+#!/bin/sh
+
+bash -ic  '
+cd .tmp &&
+git init &&
+git tag &&
+git tag
+'
+
+./.achieved 'Apprentice Gipsy (Level 1)'
