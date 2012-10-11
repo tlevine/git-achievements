@@ -1,0 +1,11 @@
+#!/bin/sh
+
+bash -ic '
+cd .tmp &&
+git clone ../.fixtures/bare.git &&
+cd bare &&
+git fetch origin master &&
+git fetch origin master
+'
+
+./.achieved 'Apprentice Collector (Level 1)'
