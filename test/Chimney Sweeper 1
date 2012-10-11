@@ -1,0 +1,10 @@
+#!/bin/bash -i
+
+cd .tmp &&
+git clone ../.fixtures/bare.git &&
+cd bare &&
+git gc
+git gc
+cd ../..
+
+./.achieved 'Apprentice Chimney Sweeper (Level 1)'
