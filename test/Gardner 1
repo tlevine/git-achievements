@@ -1,0 +1,11 @@
+#!/bin/sh
+
+bash -ic '
+cd .tmp &&
+git clone ../.fixtures/bare.git &&
+cd bare &&
+git show-branch &&
+git show-branch
+'
+
+./.achieved 'Apprentice Gardner (Level 1)'
