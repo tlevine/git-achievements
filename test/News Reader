@@ -1,3 +1,11 @@
-#!/bin/bash -i
-set -e
+#!/bin/sh
 
+bash -ic '
+cd .tmp &&
+git clone ../.fixtures/bare.git &&
+cd bare &&
+git whatchanged |head &&
+git whatchanged |head
+'
+
+./.achieved 'News Reader'
