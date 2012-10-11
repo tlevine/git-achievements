@@ -1,0 +1,11 @@
+
+#!/bin/sh
+
+bash -ic '
+cd .tmp &&
+git clone ../.fixtures/bare.git &&
+cd bare &&
+git push && git push
+'
+
+./.achieved 'Apprentice Socialite (Level 1)'
