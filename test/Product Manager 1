@@ -1,0 +1,11 @@
+#!/bin/sh
+
+bash -ic  '
+cd .tmp &&
+git init &&
+echo foo > bar && git add bar && git commit bar -m baz &&
+git stash &&
+git stash
+'
+
+./.achieved 'Apprentice Product Manager (Level 1)'
