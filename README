@@ -50,7 +50,8 @@ You can get your first achievement by running
 
 Running Tests
 -----
-Install  Urchin (http://www.urchin.sh).
+Install Urchin (http://www.urchin.sh) by putting it in your PATH;
+here's one way to do that.
 
     wget -O /usr/local/bin/urchin https://raw.github.com/scraperwiki/urchin/83b0e53536d05a13501a9dc69b1a481158fedb24/urchin
     chmod +x /usr/local/bin/urchin
