@@ -1,3 +1,10 @@
-#!/bin/bash -i
-set -e
+#!/bin/sh
 
+bash -ic '
+cd .tmp &&
+git clone ../.fixtures/bare.git &&
+cd bare &&
+git reflog --date=relative
+'
+
+./.achieved 'Stamp Collector'
