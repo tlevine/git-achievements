@@ -1,3 +1,13 @@
 #!/bin/bash -i
-exit 1
 
+cd .tmp
+git init
+for i in $(seq 1 2)
+  do
+  echo $i > $i
+  git add $i
+  git commit -s -m $i
+done
+cd ..
+
+./.achieved 'Apprentice Locksmith (Level 1)'
