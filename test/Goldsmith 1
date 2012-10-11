@@ -1,0 +1,10 @@
+#!/bin/sh
+
+bash -ic  '
+cd .tmp &&
+git init &&
+git diff --cached &&
+git diff --cached
+'
+
+./.achieved 'Apprentice Goldsmith (Level 1)'
