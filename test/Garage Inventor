@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash -i
 
 # setup our push repo
 mkdir .testapplication.push
