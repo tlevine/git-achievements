@@ -1,0 +1,11 @@
+#!/bin/sh
+
+bash -ic '
+cd .tmp &&
+git clone ../.fixtures/bare.git &&
+cd bare &&
+git merge master &&
+git merge master
+'
+
+./.achieved 'Apprentice Banker (Level 1)'
